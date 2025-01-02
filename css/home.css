@@ -324,18 +324,24 @@ body {
       z-index: 3;
       background-color: #001430;
       height: 100%;
-      width: 50%;
+      width: 70%; /* Ajuste para o menu ocupar menos espaço */
       font-family: Arial, Helvetica, sans-serif;
       padding-top: 5%;
       padding-left: 5%;
+      transition: transform 0.3s ease;
+    }
+  
+    .none {
+      display: none;
     }
   
     .shadow {
       position: absolute;
       z-index: 2;
       width: 100%;
-      height: 105%;
+      height: 100vh; /* Ajuste para a sombra cobrir toda a tela */
       background-color: rgba(0, 0, 0, 0.425);
+      display: none;
     }
   
     .pages {
